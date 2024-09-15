@@ -1,0 +1,34 @@
+<div class="home1">
+  <div class="container">
+    <div class="row">
+      <div class="intro col-md-6 col-sm-12">
+        <h1>POOJA KAMBLE</h1>
+        <p>Web Developer | UI-UX designer | Designer | Freelancer</p>
+      </div>
+      <div class="photo col-md-6 col-sm-12">
+        <img
+          src="https://us.123rf.com/450wm/azuzl/azuzl1701/azuzl170100014/69986169-beautiful-girl-with-black-hair-are-shifted-through-a-shoulder-portrait-isolated-on-white-background.jpg?ver=6"
+          alt="Pooja">
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+<section class="skills-body row justify-content-center mb-5">
+  <div class="col-12 heading">
+    <h2>SKILLS</h2>
+  </div>
+  <div class="parent-skill col-lg-4 col-md-6 col-sm-12 text-center" *ngFor="let skill of skills">
+    <div class="skill mx-auto  my-4">
+      <div class="progress" [attr.data-progress]="skill.progress">
+        <span class="progress-number">{{ skill.percent }}%</span>
+      </div>
+    </div>
+    <span class="title">{{ skill.name }}</span>
+  </div>
+</section>
+</div>
+
+<app-pdf-viewer></app-pdf-viewer>
+
+<app-experience></app-experience>

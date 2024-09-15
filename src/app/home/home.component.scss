@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body {
+  font-family: 'Poppins' !important;
+ 
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  .heading2 h2 {
+    font-size: 70px;
+  font-weight: 600;
+  margin-top: 25px;
+  margin-bottom: 40px;
+  color: white;
+  text-align: center;
+  }
+  .home1{
+      background: linear-gradient(90deg, #56CCF2, #2F80ED);
+      color: white;
+      padding: 20px;  
+  }
+ .intro{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+
+ }
+  .photo{
+    width: 300px;
+  }
+   .photo img {
+    border-radius: 50%;
+    width: 100%;
+   
+  }
+  
+  // skills
+
+  .skills-body {
+    
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .skill {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: 10px 10px 19px #56CCF2, -10px -10px 19px #2F80ED;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .progress {
+    width: 97%;
+    height: 97%;
+    border-radius: 50%;
+    background: linear-gradient(90deg, #56CCF2, #2F80ED);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .progress-number {
+    color: white;
+    font-size: 2rem;
+  }
+  
+  .title {
+    color: black;
+    font-size: 2rem;
+    margin-top: 20px;
+  }
+  
+  .heading h2 {
+    font-size: 70px;
+  font-weight: 600;
+  background-image: radial-gradient(ellipse, #56CCF2, #2F80ED);
+  color: transparent;
+  background-clip: text;
+  text-align: center;
+  -webkit-background-clip: text;
+  margin-top: 25px;
+  margin-bottom: 40px;
+  }

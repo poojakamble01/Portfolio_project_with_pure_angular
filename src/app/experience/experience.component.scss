@@ -1,0 +1,169 @@
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    position: relative;
+}
+.heading h2 {
+    font-size: 50px;
+  font-weight: 600;
+  background-image: radial-gradient(ellipse, #56CCF2, #2F80ED);
+  color: transparent;
+  background-clip: text;
+  text-align: center;
+  -webkit-background-clip: text;
+  margin-top: 25px;
+  margin-bottom: 40px;
+  }
+  .heading2 h2 {
+    font-size: 70px;
+  font-weight: 600;
+  margin-top: 25px;
+  margin-bottom: 40px;
+  color: white;
+  text-align: center;
+  }
+.step-wrapper {
+    margin: 30px;
+    margin-bottom: 200px;
+    position: relative;
+    height: 185px; 
+}
+
+.linestep {
+    text-align: center;
+    max-width: 250px;
+    position: absolute;
+    visibility: hidden; /* Initially hidden */
+}
+
+.num-right {
+    color: #fff;
+    border-radius: 100px;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-weight: bold;
+    background: #56CCF2;
+   
+}
+.num-left{
+    color: #fff;
+    border-radius: 100px;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-weight: bold;
+    background: #56CCF2;
+    position: absolute;
+    right: 2px;
+}
+
+p {
+    width: 250px;
+    position: absolute;
+    margin-top: 7px;
+    font-weight: 500;
+    line-height: normal;
+    font-size: 18px;
+}
+
+p.left {
+    width: 200px;
+    right: 34px;
+    top: -17px;
+}
+
+p.right {
+    width: 200px;
+    left: 34px;
+    top: -17px;
+}
+
+.path {
+    visibility: hidden;
+    stroke-dasharray: 600;
+    stroke-dashoffset: 600; /* Initially offset to hide the line */
+    animation: drawline 4s linear forwards;
+}
+
+.move-line .path {
+    visibility: visible; /* Make line visible */
+}
+
+.move-line .linestep {
+    animation-name: show-step-item;
+    animation-duration: 0.2s;
+    animation-fill-mode: forwards;
+    visibility: visible; /* Make steps visible */
+}
+.work2{
+    position: absolute;
+    top: 250px;
+}
+
+.linestep1 { animation-delay: 3.2s; }
+.linestep2 { animation-delay: 2.8s; }
+
+
+@keyframes show-step-item {
+    from { transform: scale(0.2); opacity: 0; }
+    to { visibility: visible; transform: scale(1); opacity: 1; }
+}
+
+@keyframes drawline {
+    to { stroke-dashoffset: 0; }
+}
+
+
+@media screen and (max-width: 768px) {
+    svg, line {
+        display: none;
+    }
+    
+    .step-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto; /* Adjust height to accommodate the stacked articles */
+        margin-bottom: 30px;
+    }
+    
+    .linestep {
+        position: relative;
+        max-width: 100%;
+        margin: 20px 0; /* Add some space between each step */
+        visibility: visible; /* Ensure visibility */
+        text-align: center;
+        left: 0% !important; 
+
+    }
+
+    .num-left, .num-right {
+        position: relative;
+        margin: 0 auto 10px; /* Center the icon and add space below */
+        right: auto;
+    }
+
+    p {
+        position: relative;
+        margin: 0;
+        width: auto; /* Make paragraph width flexible */
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+
+    .work2 {
+        position: relative;
+        top: 0;
+    }
+    p.right , p.left {
+        right: 0;
+        top: 0;
+        left: 0;
+    }
+}

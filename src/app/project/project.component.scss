@@ -1,0 +1,58 @@
+.marquee {
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+}
+
+.marquee-inner {
+  display: flex;
+  transition: transform 0.1s linear;
+  white-space: nowrap;
+}
+
+.project-slide {
+  min-width: 100%; 
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+i {
+  font-size: 40px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+.marquee a {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+}
+  a:hover {
+    text-decoration: underline;
+  }
+
+  .project-section {
+    background: linear-gradient(90deg, #56CCF2, #2F80ED);
+    padding: 20px;
+    border-radius: 8px;
+    color: #fff;
+  }
+  .heading2 h2 {
+    font-size: 70px;
+  font-weight: 600;
+  margin-top: 25px;
+  margin-bottom: 40px;
+  color: white;
+  text-align: center;
+  }
+@media (min-width: 600px) {
+  .project-slide {
+    min-width: 50%; /* Show 2 slides at a time on medium screens */
+  }
+}
+
+@media (min-width: 900px) {
+  .project-slide {
+    min-width: 33.33%; /* Show 3 slides at a time on large screens */
+  }
+}

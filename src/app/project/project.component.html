@@ -1,0 +1,15 @@
+<div class="project-section">
+  <div class="heading2">
+    <h2>My Projects</h2>
+  </div>
+  <div class="marquee">
+    <div class="marquee-inner">
+      <div class="project-slide" *ngFor="let project of projects">
+        <i [class]="project.icon"></i>
+        <h3>{{ project.name }}</h3>
+        <a [href]="project.repo" target="_blank">View Repository</a>
+      </div>
+    </div>
+  </div>
+
+</div>
